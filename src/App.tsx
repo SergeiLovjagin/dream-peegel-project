@@ -1,14 +1,19 @@
 import React from 'react';
 import './App.css';
-import { Project } from './components/Project';
 import {SettingsPage} from "./components/SettingsPage";
+import {BrowserRouter, Route} from "react-router-dom";
+import {Save} from "./components/Save";
 
 function App() {
     return (
+        <BrowserRouter>
         <div className="App">
-            <SettingsPage/>
-            <Project/>
+                <Route exact path='/'
+                    render={() => <SettingsPage/>}/>
+                <Route path='/save'
+                       render={() => <Save/>}/>
         </div>
+        </BrowserRouter>
     );
 }
 

@@ -1,11 +1,20 @@
 import {InferActionTypes} from "./redux-store";
-import {LampsType} from "../components/SettingsPage";
+
+export type BackDetailsValuesType = {
+    outerLeftRightValue: number
+    outerTopBottomValue: number
+    innerTopBottomValue: number
+    innerLeftRightValue: number
+    mirrorStandValue: number
+}
+export type LampsType = {
+    left: number, top: number, right: number, bottom: number,
+}
 
 type initialStateType = typeof initialState
-
 const initialState = {
-    mirrorWidth: 0,
-    mirrorHeight: 0,
+    mirrorWidth: 400,
+    mirrorHeight: 400,
     outerLeftRightSide: {
         width: 50,
         height: 0
@@ -24,31 +33,34 @@ const initialState = {
     },
     mirrorStand: false,
     mirrorStandSize: {
-        width: 0,
-        height: 0
+        width: 400,
+        height: 400
     },
     lamps: {
-
-        top: 3,
-        left: 4,
-        right:5,
-        bottom: 3
+        top: 2,
+        left: 2,
+        right: 2,
+        bottom: 2
     },
     backPlate: {
         width: 0,
         height: 0
+    },
+    backDetails: {
+        outerLeftRightValue: 2,
+        outerTopBottomValue: 2,
+        innerTopBottomValue: 2,
+        innerLeftRightValue: 2,
+        mirrorStandValue: 1,
     }
-
 }
 
 type CalculatorACType = InferActionTypes<typeof actions>
 export const actions = {
     setMirrorData: (mirrorWidth: number, mirrorHeight: number) => ({type: 'SET-MIRROR-DATA', mirrorWidth, mirrorHeight} as const),
-    setStandData: (standWidth: number, standHeight: number, mirrorStand :boolean) => ({type: 'SET-STAND-DATA', standWidth, standHeight, mirrorStand} as const),
-    setLampsData: (lamps: LampsType) => ({
-        type: 'SET-LAMPS-DATA',
-        lamps
-    } as const),
+    setStandData: (standWidth: number, standHeight: number, mirrorStand: boolean) => ({type: 'SET-STAND-DATA', standWidth, standHeight, mirrorStand} as const),
+    setLampsData: (lamps: LampsType) => ({type: 'SET-LAMPS-DATA', lamps} as const),
+    setBackDetailsData: (values: BackDetailsValuesType) => ({type: 'SET-BACK-DETAILS-DATA', values} as const)
 }
 
 export const calculator = (state: initialStateType = initialState, action: CalculatorACType): initialStateType => {
@@ -72,7 +84,7 @@ export const calculator = (state: initialStateType = initialState, action: Calcu
                 },
                 backPlate: {
                     ...state.backPlate, width: action.mirrorWidth - 6, height: action.mirrorHeight - 6
-                }
+                },
             }
         }
         case "SET-STAND-DATA": {
@@ -88,6 +100,12 @@ export const calculator = (state: initialStateType = initialState, action: Calcu
             return {
                 ...state,
                 lamps: action.lamps
+            }
+        }
+        case "SET-BACK-DETAILS-DATA": {
+            return {
+                ...state,
+                backDetails: action.values
             }
         }
         default : {

@@ -1,34 +1,88 @@
-.container {
+.project {
     max-width: 1200px;
-    margin: 0 auto;
-}
-.mirror {
-    display: flex;
-    padding: 60px 0 60px;
-}
-.mirror .details {
-    margin-right: 100px;
-}
-
-.sideWalls {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.details {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-}
-
-.detailsBox {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
+
+.project .ant-col {
+    margin-right: 20px;
+}
+
+.ant-form-item {
+    margin: 0 !important;
+}
+
+.mirror {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.mirror .details {
+    margin: 0 50px 0 50px;
+}
+
+.detailContainer {
+    position: absolute;
+    left: -30px;
+}
+
+
+.detailsBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.borderBox .detailName {
+    position: absolute;
+    margin: 0;
+    font-weight: bold;
+    left: calc(50% - 40px);
+}
+
+.detailName{
+    position: absolute;
+    margin: 0;
+    font-weight: bold;
+    left: calc(50% - 40px);
+}
+
+.detailsBox p {
+    position: absolute;
+    font-size: 0.8em;
+}
+
+.detailsBox p:nth-child(1) {
+    left: 0px;
+    top: 5px;
+}
+
+.detailsBox p:nth-child(2) {
+    left: -17px;
+    top: 20px;
+}
+
+.detailsBox p:nth-child(3) {
+    bottom: -12px;
+    right: -16px;
+}
+
+.detailsBox p:nth-child(4) {
+    right: 0px;
+    top: 5px;
+}
+
 
 .detail {
     display: flex;
+    position: relative;
     justify-content: flex-end;
     align-items: center;
 }
@@ -38,86 +92,125 @@
 }
 
 .borderBox {
-    padding : 15px;
+    position: relative;
+    padding: 15px;
     height: 100%;
     width: 100%;
 }
 
-.justBorder{
-    border: 1px solid;
+.borderBox span {
+    position: absolute;
+    right: -5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
     height: 100%;
-    width: 100%;
 }
-.lights{
+
+.borderBox .lengthBetweenLightsRight {
+    font-size: 12px;
+    right: 70px;
+}
+
+.borderBox .lengthBetweenLightsTop {
+    font-size: 12px;
+    right: 60%;
+    align-items: baseline;
+    top: 22px;
+}
+
+.borderBox .holeWidth {
+    right: 70px;
+    top: -20px;
+}
+
+.lights {
     height: 100%;
     width: 100%;
     position: relative;
 }
-.light{
+
+.light {
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
     border: 1px solid;
+    background-color: black;
+    -webkit-print-color-adjust: exact;;
 }
 
-.topLights{
+.bottom,
+.top {
     position: absolute;
-    width: calc(100% + 15px);
+    width: calc(100% + 16px);
     display: flex;
-    left: -7.5px;
-    top: -7.5px;
     justify-content: space-between;
 }
 
-.bottomLights{
-    position: absolute;
-    width: calc(100% + 15px);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    bottom: -7.5px;
-    left: -7.5px;
+.top {
+    left: -8px;
+    top: -8px;
+}
 
+.bottom {
+    bottom: -8px;
+    left: -8px;
 }
-.rightLights{
+
+.right,
+.left {
     position: absolute;
-    height: calc(100% + 15px);
-    top: -7.5px;
+    height: calc(100% + 16px);
     display: flex;
-    right: -7.5px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.leftLights{
-    position: absolute;
-    height: calc(100% + 15px);
-    display: flex;
-    top: -7.5px;
-    left: -7.5px;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.right {
+    right: -8px;
+    top: -8px;
+}
 
+.left {
+    top: -8px;
+    left: -8px;
 
+}
 
+.left :after,
+.right:after {
+    position: absolute;
+    border-right: 1px solid;
+    content: '';
+    top: -25px;
+    width: 50%;
+    height: calc(100% + 50px);
+}
 
+.top:after,
+.bottom:after {
+    position: absolute;
+    top: 50%;
+    width: calc(100% + 50px);
+    right: -25px;
+    content: '';
+    border-top: 1px solid;
+}
 
+.ant-form-item-label > label {
+    padding: 0 10px;
+}
 
+.savePageButtons {
+    display: flex;
+    justify-content: center;
+}
 
-/*.lights .top{*/
-/*    background: red;*/
-/*}*/
-/*.lights .bottom {*/
-/*    background: blue;*/
-/*}*/
-/*.lights .left {*/
-/*    background: green;*/
-
-/*}*/
-/*.lights .right{*/
-/*    background: yellow;*/
-/*}*/
+.saveButton,
+.backButton {
+    padding: 30px 10px;
+}
 
 
