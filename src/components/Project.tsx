@@ -117,7 +117,7 @@ export const Project = () => {
                                 <span> {backPlate.width}</span>
                                 <div style={size(backPlate.width, backPlate.height)} className='detail'>
                                     <span> {backPlate.height}</span>
-                                    <span className='detailName'>Back Plate</span>
+                                    <span className='detailName'>HDF 4mm</span>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,8 @@ export const Project = () => {
                         {createBackDetails(outerTopBottomSide, 'outerTopBottomValue')}
                         {createBackDetails(innerTopBottomSide, 'innerTopBottomValue')}
                         {createBackDetails(innerLeftRightSide, 'innerLeftRightValue')}
-                        {createBackDetails(mirrorStandSize, 'mirrorStandValue')}
+                        {mirrorStand && createBackDetails(mirrorStandSize, 'mirrorStandValue')}
+
                         <Row justify={"center"} style={{margin: '30px'}}>
                             <Col>
                                 <Form.Item>

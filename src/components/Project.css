@@ -133,8 +133,8 @@
 
 .light {
     content: '';
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     border: 1px solid;
     background-color: black;

@@ -6,7 +6,7 @@ import {Save} from "./components/Save";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={'/dream-peegel-project'}>
         <div className="App">
                 <Route exact path='/'
                     render={() => <SettingsPage/>}/>
