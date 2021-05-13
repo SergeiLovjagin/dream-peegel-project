@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dream-peegel-project/static/css/main.6638ffdf.chunk.css",
+    "main.js": "/dream-peegel-project/static/js/main.c5f4ec90.chunk.js",
+    "main.js.map": "/dream-peegel-project/static/js/main.c5f4ec90.chunk.js.map",
+    "runtime-main.js": "/dream-peegel-project/static/js/runtime-main.2169551a.js",
+    "runtime-main.js.map": "/dream-peegel-project/static/js/runtime-main.2169551a.js.map",
+    "static/css/2.289e503f.chunk.css": "/dream-peegel-project/static/css/2.289e503f.chunk.css",
+    "static/js/2.ebdf4be4.chunk.js": "/dream-peegel-project/static/js/2.ebdf4be4.chunk.js",
+    "static/js/2.ebdf4be4.chunk.js.map": "/dream-peegel-project/static/js/2.ebdf4be4.chunk.js.map",
+    "static/js/3.3333e11a.chunk.js": "/dream-peegel-project/static/js/3.3333e11a.chunk.js",
+    "static/js/3.3333e11a.chunk.js.map": "/dream-peegel-project/static/js/3.3333e11a.chunk.js.map",
+    "index.html": "/dream-peegel-project/index.html",
+    "static/css/2.289e503f.chunk.css.map": "/dream-peegel-project/static/css/2.289e503f.chunk.css.map",
+    "static/css/main.6638ffdf.chunk.css.map": "/dream-peegel-project/static/css/main.6638ffdf.chunk.css.map",
+    "static/js/2.ebdf4be4.chunk.js.LICENSE.txt": "/dream-peegel-project/static/js/2.ebdf4be4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2169551a.js",
+    "static/css/2.289e503f.chunk.css",
+    "static/js/2.ebdf4be4.chunk.js",
+    "static/css/main.6638ffdf.chunk.css",
+    "static/js/main.c5f4ec90.chunk.js"
+  ]
+}
