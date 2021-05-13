@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dream-peegel-project/static/css/main.6638ffdf.chunk.css",
-    "main.js": "/dream-peegel-project/static/js/main.c5f4ec90.chunk.js",
-    "main.js.map": "/dream-peegel-project/static/js/main.c5f4ec90.chunk.js.map",
+    "main.js": "/dream-peegel-project/static/js/main.e1059c7b.chunk.js",
+    "main.js.map": "/dream-peegel-project/static/js/main.e1059c7b.chunk.js.map",
     "runtime-main.js": "/dream-peegel-project/static/js/runtime-main.2169551a.js",
     "runtime-main.js.map": "/dream-peegel-project/static/js/runtime-main.2169551a.js.map",
     "static/css/2.289e503f.chunk.css": "/dream-peegel-project/static/css/2.289e503f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.289e503f.chunk.css",
     "static/js/2.ebdf4be4.chunk.js",
     "static/css/main.6638ffdf.chunk.css",
-    "static/js/main.c5f4ec90.chunk.js"
+    "static/js/main.e1059c7b.chunk.js"
   ]
 }
